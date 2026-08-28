@@ -3812,3 +3812,207 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/* Adventure Specialties */
+
+	.adventure-specialties {
+		background: linear-gradient(135deg, #152631 0%, #1d242a 52%, #242b33 100%);
+		overflow: hidden;
+		position: relative;
+	}
+
+		.adventure-specialties:before {
+			background: linear-gradient(90deg, #21b2a6 0%, #21b2a6 50%, #c5aa5b 50%, #c5aa5b 100%);
+			content: '';
+			height: 4px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.adventure-specialties .section-kicker {
+			color: #21b2a6;
+			font-size: 0.7em;
+			font-weight: 800;
+			letter-spacing: 0.25em;
+			margin-bottom: 1em;
+			text-transform: uppercase;
+		}
+
+		.adventure-specialties header.major {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 50em;
+		}
+
+	.adventure-grid {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		gap: 1.5em;
+		text-align: left;
+	}
+
+	.adventure-card {
+		background-color: #1d242a;
+		border: solid 1px rgba(255, 255, 255, 0.18);
+		border-radius: 3px;
+		min-height: 34em;
+		overflow: hidden;
+		position: relative;
+		width: 50%;
+	}
+
+		.adventure-image {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+			.adventure-image:after {
+				background: linear-gradient(to bottom, rgba(13, 23, 29, 0.04) 8%, rgba(13, 23, 29, 0.2) 38%, rgba(13, 23, 29, 0.98) 88%);
+				content: '';
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+			.adventure-card--snow .adventure-image:after {
+				background: linear-gradient(to bottom, rgba(14, 22, 31, 0.02) 8%, rgba(14, 22, 31, 0.24) 38%, rgba(14, 22, 31, 0.98) 88%);
+			}
+
+			.adventure-image img {
+				height: 100%;
+				object-fit: cover;
+				width: 100%;
+			}
+
+			.adventure-card--dive .adventure-image img {
+				object-position: 58% center;
+			}
+
+			.adventure-card--snow .adventure-image img {
+				object-position: 35% center;
+			}
+
+		.adventure-content {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-justify-content: flex-end;
+			-webkit-justify-content: flex-end;
+			-ms-justify-content: flex-end;
+			justify-content: flex-end;
+			min-height: 34em;
+			padding: 3em;
+			position: relative;
+			z-index: 1;
+		}
+
+			.adventure-content .adventure-number {
+				color: #21b2a6;
+				font-size: 0.65em;
+				font-weight: 800;
+				letter-spacing: 0.25em;
+				margin-bottom: 1.25em;
+			}
+
+			.adventure-card--snow .adventure-number {
+				color: #ead78e;
+			}
+
+			.adventure-content h3 {
+				font-size: 1.6em;
+				line-height: 1.2em;
+				margin-bottom: 0.75em;
+			}
+
+				.adventure-content h3 span {
+					font-size: 0.58em;
+					letter-spacing: 0.2em;
+				}
+
+			.adventure-content > p:not(.adventure-number) {
+				color: rgba(255, 255, 255, 0.8);
+				font-size: 0.9em;
+				letter-spacing: 0.05em;
+				line-height: 1.75em;
+				margin-bottom: 1.5em;
+			}
+
+	.adventure-tags {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		gap: 0.6em;
+	}
+
+		.adventure-tags li {
+			border: solid 1px rgba(255, 255, 255, 0.32);
+			border-radius: 2px;
+			font-size: 0.65em;
+			font-weight: 600;
+			letter-spacing: 0.15em;
+			padding: 0.35em 0.8em;
+			text-transform: uppercase;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.adventure-specialties > .inner {
+				width: 90%;
+			}
+
+			.adventure-card {
+				min-height: 31em;
+			}
+
+			.adventure-content {
+				min-height: 31em;
+				padding: 2.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.adventure-grid {
+				display: block;
+			}
+
+			.adventure-card {
+				margin-bottom: 1.5em;
+				min-height: 30em;
+				width: 100%;
+			}
+
+			.adventure-card:last-child {
+				margin-bottom: 0;
+			}
+
+			.adventure-content {
+				min-height: 30em;
+				padding: 2em;
+			}
+
+			.adventure-content h3 {
+				font-size: 1.35em;
+			}
+
+		}
